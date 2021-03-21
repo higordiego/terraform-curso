@@ -16,7 +16,7 @@ resource "aws_s3_bucket_object" "archive_bucket" {
 
 resource "aws_s3_bucket" "manual" {
   bucket = "doc.covid.finspect.me"
-  tags   = {
+  tags = {
     Importado = "import_feito_terraform"
   }
 }
